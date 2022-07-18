@@ -2,3 +2,21 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  display: block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
