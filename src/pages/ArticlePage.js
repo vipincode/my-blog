@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import ArticleList from '../components/ArticleList';
 import articleContent from './article-content';
+import NotFoundPage from './NotFoundPage';
 
 const ArticlePage = () => {
   // Get the Name param from the URL.
@@ -8,7 +9,7 @@ const ArticlePage = () => {
 
   const article = articleContent.find((article) => article.name === name);
 
-  if (!article) return <h1>Article does not exist!</h1>;
+  if (!article) return <NotFoundPage />;
 
   const otherArticles = articleContent.filter(
     (article) => article.name !== name
